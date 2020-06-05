@@ -75,4 +75,35 @@ public class ReflectionTest {
         System.out.println(nation);
 
     }
+
+    //疑问1：通过直接new的方式或反射的方式都可以调用公共的结构，开发中到底用哪个？
+    //建议：直接new的方式。
+    //什么时候会使用：反射的方式。 反射的特征：动态性
+    //疑问2? 反射机制与面向对象的封装性是否矛盾?如何看待两个技术
+    //不矛盾。
+
+    /*
+    关于java.lang.Class类的理解
+    1.类的加载过程：
+    程序经过javac.exe命令以后，会生成一个或多个字节码文件(.class结尾),接着我们使用
+    java.exe命令对某个字节码文件进行解释运行。相当于将某个字节码文件加载到内存中。此
+    过程就称为类的加载。加载到内存中的类，我们就称为运行时类，此运行的类，就作为Class的
+    一个实例。
+
+    2.换句话说，Class的实例就对应着一个运行时类。
+
+     */
+
+    //获取Class类的实例的方式
+    @Test
+    public void test3(){
+        //方式一：
+        Class<Person> clazz1 = Person.class;
+        System.out.println(clazz1);
+
+
+    }
+
+
+    //万事万物皆对象?对象.xxx，File,URL,反射，前端，数据库操作。
 }
