@@ -24,7 +24,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6082bc8-5056-4e9a-a5a5-e116a41ceecf" name="Default Changelist" comment="IDEA整合Gihub测试">
+    <list default="true" id="a6082bc8-5056-4e9a-a5a5-e116a41ceecf" name="Default Changelist" comment="UDP网络编程测试">
+      <change afterPath="$PROJECT_DIR$/day10/src/com/atguigu/java1/URLTest1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,8 +93,9 @@
       <recent name="D:\Java\workspace_idea\JavaSenior\day09" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UDPTest.send">
-    <configuration name="TCPTest2.client" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.URLTest1">
+    <configuration name="URLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.java1.URLTest" />
       <module name="day10" />
       <extension name="coverage">
         <pattern>
@@ -101,10 +103,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.java1" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.java1.TCPTest2" />
-      <option name="METHOD_NAME" value="client" />
-      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="URLTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.java1.URLTest1" />
+      <module name="day10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.java1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,22 +131,6 @@
       <option name="PACKAGE_NAME" value="com.atguigu.java1" />
       <option name="MAIN_CLASS_NAME" value="com.atguigu.java1.TCPTest3" />
       <option name="METHOD_NAME" value="client" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TCPTest3.server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.java1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.java1" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.java1.TCPTest3" />
-      <option name="METHOD_NAME" value="server" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -246,20 +241,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TCPTest2.client" />
       <item itemvalue="JUnit.TCPTest3.client" />
-      <item itemvalue="JUnit.TCPTest3.server" />
       <item itemvalue="Tomcat Server.Tomcat 8.0.33" />
       <item itemvalue="JUnit.UDPTest.send" />
       <item itemvalue="JUnit.UDPTest.receive" />
+      <item itemvalue="Application.URLTest" />
+      <item itemvalue="Application.URLTest1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.URLTest1" />
+        <item itemvalue="Application.URLTest" />
         <item itemvalue="JUnit.UDPTest.send" />
         <item itemvalue="JUnit.UDPTest.receive" />
         <item itemvalue="JUnit.TCPTest3.client" />
-        <item itemvalue="JUnit.TCPTest3.server" />
-        <item itemvalue="JUnit.TCPTest2.client" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +280,7 @@
       <workItem from="1591257508886" duration="323000" />
       <workItem from="1591257848973" duration="20852000" />
       <workItem from="1591319375338" duration="19101000" />
-      <workItem from="1591347521860" duration="3994000" />
+      <workItem from="1591347521860" duration="5392000" />
     </task>
     <task id="LOCAL-00001" summary="IDEA整合Gihub测试">
       <created>1591347901598</created>
@@ -308,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591348644855</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="UDP网络编程测试">
+      <created>1591354235295</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591354235295</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +329,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="IDEA整合Gihub测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="IDEA整合Gihub测试" />
+    <MESSAGE value="UDP网络编程测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="UDP网络编程测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="243" y="3" key="#Project_Structure" timestamp="1590904104133">
@@ -362,22 +365,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="636" y="329" width="263" height="297" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1591348053030" />
-    <state width="1024" height="215" key="GridCell.Tab.0.bottom" timestamp="1591347335193">
+    <state width="1493" height="249" key="GridCell.Tab.0.bottom" timestamp="1591355503393">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="215" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1591347335193" />
-    <state width="1024" height="215" key="GridCell.Tab.0.center" timestamp="1591347335192">
+    <state width="1493" height="249" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1591355503393" />
+    <state width="1493" height="249" key="GridCell.Tab.0.center" timestamp="1591355503393">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="215" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1591347335192" />
-    <state width="1024" height="215" key="GridCell.Tab.0.left" timestamp="1591347335192">
+    <state width="1493" height="249" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1591355503393" />
+    <state width="1493" height="249" key="GridCell.Tab.0.left" timestamp="1591355503393">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="215" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1591347335192" />
-    <state width="1024" height="215" key="GridCell.Tab.0.right" timestamp="1591347335193">
+    <state width="1493" height="249" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1591355503393" />
+    <state width="1493" height="249" key="GridCell.Tab.0.right" timestamp="1591355503393">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="215" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1591347335193" />
+    <state width="1493" height="249" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1591355503393" />
     <state width="1024" height="215" key="GridCell.Tab.1.bottom" timestamp="1591347335193">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -432,10 +435,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="485" y="323" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.864@0.0.1536.864" timestamp="1591322614160" />
-    <state x="563" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591348676034">
+    <state x="563" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591354255378">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="563" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1591348676034" />
+    <state x="563" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1591354255378" />
     <state x="172" y="38" key="new project wizard" timestamp="1591344070680">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
