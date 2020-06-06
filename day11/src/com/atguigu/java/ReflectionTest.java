@@ -2,6 +2,7 @@ package com.atguigu.java;
 
 import org.junit.Test;
 
+import java.lang.annotation.ElementType;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -15,10 +16,10 @@ public class ReflectionTest {
 
     //反射之前，对于Person的操作
     @Test
-    public void test1(){
+    public void test1() {
 
         //1.创建Person类的对象
-        Person p1 = new Person("Tom",12);
+        Person p1 = new Person("Tom", 12);
 
         //2.通过对象，调用其内部的属性、方法
         p1.age = 10;
@@ -37,7 +38,7 @@ public class ReflectionTest {
     public void test2() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         Class clazz = Person.class;
         //1.通过反射，创建Person类的对象
-        Constructor cons =  clazz.getConstructor(String.class,int.class);
+        Constructor cons = clazz.getConstructor(String.class, int.class);
 
 
         Object obj = cons.newInstance("Tom", 12);
@@ -46,7 +47,7 @@ public class ReflectionTest {
 
         //2.通过反射，调用对象指定的属性、方法
         Field age = clazz.getDeclaredField("age");
-        age.set(p,10);
+        age.set(p, 10);
         System.out.println(p.toString());
 
         //调用方法
@@ -65,7 +66,7 @@ public class ReflectionTest {
         //调用私有的属性
         Field name = clazz.getDeclaredField("name");
         name.setAccessible(true);
-        name.set(p1,"HAHAHA");
+        name.set(p1, "HAHAHA");
         System.out.println(p1);
 
         //调用私有方法
@@ -126,4 +127,27 @@ public class ReflectionTest {
 
 
     //万事万物皆对象?对象.xxx，File,URL,反射，前端，数据库操作。
+
+    //Class实例可以是哪些结构的说明
+    @Test
+    public void test4() {
+        Class c1 = Object.class;
+        Class c2 = Comparable.class;
+        Class c3 = String[].class;
+        Class c4 = int[][].class;
+        Class c5 = ElementType.class;
+        Class c6 = Override.class;
+        Class c7 = int.class;
+        Class c8 = void.class;
+        Class c9 = Class.class;
+
+        int[] a = new int[10];
+        int[] b = new int[100];
+        Class c10 = a.getClass();
+        Class c11 = b.getClass(); // 只要数组的元素类型与维度一样，就是同一个Class
+        System.out.println(c10 == c11);
+
+    }
+
+
 }
